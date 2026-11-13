@@ -69,3 +69,9 @@ web
 应用固定监听 `127.0.0.1:8080`，只用于当前电脑本地运行。Spring Boot 同时提供 Web 页面、登录会话、业务接口和 MySQL 数据访问，不需要启动第二个静态文件服务器。
 
 健康检查地址：`http://localhost:8080/api/health`
+
+## 部署上线
+
+腾讯云轻量应用服务器（Ubuntu 22.04）完整部署步骤见 [docs/部署手册.md](docs/部署手册.md)，配套一键环境初始化脚本为 `deploy/install-server.sh`。
+
+要点：前端静态页由本服务通过 `StaticWebConfig` 从 `./web/` 目录托管，部署时需把 `web/` 与 jar 一并上传；数据库与 API Key 通过环境变量注入（`SERVER_ADDRESS`、`DB_*`、`ARK_API_KEY`），不写入版本库。
