@@ -1,5 +1,5 @@
 server:
-  address: ${SERVER_ADDRESS:0.0.0.0}
+  address: ${SERVER_ADDRESS:127.0.0.1}
   port: ${SERVER_PORT:8080}
 
 spring:
@@ -18,6 +18,17 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+
+ai:
+  ark:
+    # 火山方舟（豆包大模型）OpenAI 兼容接口配置
+    base-url: ${ARK_BASE_URL:https://ark.cn-beijing.volces.com/api/v3}
+    # 在火山方舟控制台获取 API Key：https://ark.volcengine.com/region:cn-beijing/apikey
+    # 请通过环境变量 ARK_API_KEY 注入，不要硬编码在版本库
+    api-key: ${ARK_API_KEY:}
+    # 模型接入点：当前使用 DeepSeek-V4.1-Flash 经济版（快、便宜、非深度思考）
+    model-id: ${ARK_MODEL:deepseek-v4-1-flash-economy-261017}
+    timeout-seconds: 90
 
 logging:
   level:

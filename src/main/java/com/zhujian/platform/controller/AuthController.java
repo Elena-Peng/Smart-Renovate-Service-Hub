@@ -18,10 +18,12 @@ import org.springframework.web.server.ResponseStatusException;
 public class AuthController {
     private final UserAccountRepository users;
     private final PasswordEncoder passwordEncoder;
+    private final CurrentUser currentUser;
 
-    public AuthController(UserAccountRepository users, PasswordEncoder passwordEncoder) {
+    public AuthController(UserAccountRepository users, PasswordEncoder passwordEncoder, CurrentUser currentUser) {
         this.users = users;
         this.passwordEncoder = passwordEncoder;
+        this.currentUser = currentUser;
     }
 
     @PostMapping("/register")
@@ -55,7 +57,7 @@ public class AuthController {
     }
 
     @GetMapping("/me")
-    public UserView me(CurrentUser currentUser) {
+    public UserView me() {
         return UserView.from(currentUser.requireLogin());
     }
 

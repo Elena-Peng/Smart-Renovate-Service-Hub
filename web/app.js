@@ -21,51 +21,66 @@ const navByRole = {
 const cases = [
   { id: 1, title: "湖畔花园 · 现代原木", image: "assets/hero-living-room.jpg", style: "现代原木", layout: "三室两厅", spaces: ["客厅", "餐厅", "主卧"], type: "旧房翻新", area: 112, budget: 28.6, days: 96, city: "杭州", liked: 126 },
   { id: 2, title: "云栖名邸 · 奶油侘寂", image: "assets/case-minimal.jpg", style: "奶油风", layout: "两室一厅", spaces: ["客厅", "主卧", "儿童房"], type: "毛坯整装", area: 89, budget: 21.8, days: 82, city: "杭州", liked: 98 },
-  { id: 3, title: "钱江府 · 轻奢留白", image: "assets/case-light-luxury.jpg", style: "现代轻奢", layout: "四室两厅", spaces: ["客厅", "餐厅", "主卧", "书房"], type: "毛坯整装", area: 136, budget: 39.2, days: 118, city: "杭州", liked: 175 },
-  { id: 4, title: "青芝坞 · 小户型焕新", image: "assets/case-minimal.jpg", style: "现代简约", layout: "两室一厅", spaces: ["厨房", "卫生间", "玄关"], type: "局部改造", area: 63, budget: 12.4, days: 51, city: "杭州", liked: 81 },
-  { id: 5, title: "滨江映月 · 收纳之家", image: "assets/hero-living-room.jpg", style: "现代原木", layout: "三室两厅", spaces: ["客厅", "餐厅", "厨房", "主卧"], type: "毛坯整装", area: 104, budget: 25.1, days: 91, city: "杭州", liked: 113 },
+  { id: 3, title: "钱江府 · 轻奢留白", image: "assets/case-soft-luxury-living.jpg", style: "现代轻奢", layout: "四室两厅", spaces: ["客厅", "餐厅", "主卧", "书房"], type: "毛坯整装", area: 136, budget: 39.2, days: 118, city: "杭州", liked: 175 },
+  { id: 4, title: "青芝坞 · 小户型焕新", image: "assets/case-colorful-modern-living.jpg", style: "现代简约", layout: "两室一厅", spaces: ["厨房", "卫生间", "玄关"], type: "局部改造", area: 63, budget: 12.4, days: 51, city: "杭州", liked: 81 },
+  { id: 5, title: "滨江映月 · 收纳之家", image: "assets/case-minimal.jpg", style: "现代原木", layout: "三室两厅", spaces: ["客厅", "餐厅", "厨房", "主卧"], type: "毛坯整装", area: 104, budget: 25.1, days: 91, city: "杭州", liked: 113 },
   { id: 6, title: "西溪公馆 · 通透大宅", image: "assets/case-light-luxury.jpg", style: "现代轻奢", layout: "复式/别墅", spaces: ["客厅", "餐厅", "主卧", "书房"], type: "旧房翻新", area: 158, budget: 46.5, days: 126, city: "杭州", liked: 202 },
   { id: 7, title: "江南里 · 新中式雅居", image: "assets/case-warm-modern.jpg", style: "新中式", layout: "四室两厅", spaces: ["客厅", "餐厅", "书房", "主卧"], type: "毛坯整装", area: 142, budget: 42.8, days: 121, city: "杭州", liked: 154 },
-  { id: 8, title: "春江明月 · 法式主卧", image: "assets/case-light-luxury.jpg", style: "法式", layout: "三室两厅", spaces: ["主卧", "次卧", "卫生间"], type: "旧房翻新", area: 118, budget: 31.6, days: 103, city: "杭州", liked: 137 },
-  { id: 9, title: "星光公寓 · 厨餐焕新", image: "assets/case-minimal.jpg", style: "现代简约", layout: "两室两厅", spaces: ["厨房", "餐厅", "阳台"], type: "局部改造", area: 72, budget: 14.8, days: 56, city: "杭州", liked: 92 },
-  { id: 10, title: "潮鸣苑 · 奶油亲子宅", image: "assets/case-warm-modern.jpg", style: "奶油风", layout: "三室一厅", spaces: ["客厅", "儿童房", "主卧", "阳台"], type: "旧房翻新", area: 96, budget: 23.9, days: 88, city: "杭州", liked: 145 },
+  { id: 8, title: "春江明月 · 法式主卧", image: "assets/case-warm-french-living.jpg", style: "法式", layout: "三室两厅", spaces: ["主卧", "次卧", "卫生间"], type: "旧房翻新", area: 118, budget: 31.6, days: 103, city: "杭州", liked: 137 },
+  { id: 9, title: "星光公寓 · 厨餐焕新", image: "assets/case-modern-minimal-living.jpg", style: "现代简约", layout: "两室两厅", spaces: ["厨房", "餐厅", "阳台"], type: "局部改造", area: 72, budget: 14.8, days: 56, city: "杭州", liked: 92 },
+  { id: 10, title: "潮鸣苑 · 奶油亲子宅", image: "assets/case-colorful-modern-living.jpg", style: "奶油风", layout: "三室一厅", spaces: ["客厅", "儿童房", "主卧", "阳台"], type: "旧房翻新", area: 96, budget: 23.9, days: 88, city: "杭州", liked: 145 },
   { id: 11, title: "运河宸园 · 原木书香家", image: "assets/hero-living-room.jpg", style: "现代原木", layout: "四室两厅", spaces: ["客厅", "书房", "餐厅", "主卧"], type: "毛坯整装", area: 138, budget: 38.5, days: 116, city: "杭州", liked: 189 },
-  { id: 12, title: "武林壹号 · 法式会客厅", image: "assets/case-light-luxury.jpg", style: "法式", layout: "复式/别墅", spaces: ["客厅", "餐厅", "玄关", "主卧"], type: "旧房翻新", area: 186, budget: 63.8, days: 148, city: "杭州", liked: 238 },
-  { id: 13, title: "未来科技城 · 极简独居", image: "assets/case-minimal.jpg", style: "现代简约", layout: "一室一厅", spaces: ["客厅", "厨房", "玄关", "阳台"], type: "毛坯整装", area: 48, budget: 10.9, days: 46, city: "杭州", liked: 76 },
-  { id: 14, title: "申花郡 · 轻奢套房", image: "assets/case-light-luxury.jpg", style: "现代轻奢", layout: "三室一厅", spaces: ["客厅", "主卧", "次卧", "卫生间"], type: "旧房翻新", area: 105, budget: 29.7, days: 94, city: "杭州", liked: 132 },
+  { id: 12, title: "武林壹号 · 美式复古会客厅", image: "assets/case-classic-european-living.jpg", style: "美式复古", layout: "复式/别墅", spaces: ["客厅", "餐厅", "玄关", "主卧"], type: "旧房翻新", area: 186, budget: 63.8, days: 148, city: "杭州", liked: 238 },
+  { id: 13, title: "未来科技城 · 极简独居", image: "assets/case-modern-minimal-living.jpg", style: "现代简约", layout: "一室一厅", spaces: ["客厅", "厨房", "玄关", "阳台"], type: "毛坯整装", area: 48, budget: 10.9, days: 46, city: "杭州", liked: 76 },
+  { id: 14, title: "申花郡 · 轻奢套房", image: "assets/case-urban-light-luxury.jpg", style: "现代轻奢", layout: "三室一厅", spaces: ["客厅", "主卧", "次卧", "卫生间"], type: "旧房翻新", area: 105, budget: 29.7, days: 94, city: "杭州", liked: 132 },
   { id: 15, title: "良渚文化村 · 新中式院居", image: "assets/case-warm-modern.jpg", style: "新中式", layout: "复式/别墅", spaces: ["客厅", "餐厅", "书房", "玄关"], type: "毛坯整装", area: 172, budget: 58.2, days: 142, city: "杭州", liked: 221 },
-  { id: 16, title: "钱塘云湾 · 奶油厨餐厅", image: "assets/case-minimal.jpg", style: "奶油风", layout: "两室两厅", spaces: ["厨房", "餐厅", "客厅"], type: "局部改造", area: 78, budget: 16.6, days: 62, city: "杭州", liked: 108 },
-  { id: 17, title: "城西银泰 · 原木成长房", image: "assets/hero-living-room.jpg", style: "现代原木", layout: "三室两厅", spaces: ["儿童房", "书房", "主卧", "阳台"], type: "旧房翻新", area: 110, budget: 27.4, days: 92, city: "杭州", liked: 158 },
-  { id: 18, title: "滨江奥体 · 轻奢卫浴套间", image: "assets/case-light-luxury.jpg", style: "现代轻奢", layout: "四室两厅", spaces: ["主卧", "卫生间", "次卧"], type: "局部改造", area: 151, budget: 24.8, days: 70, city: "杭州", liked: 119 },
-  { id: 19, title: "九堡家园 · 简约阳台书房", image: "assets/case-minimal.jpg", style: "现代简约", layout: "两室一厅", spaces: ["阳台", "书房", "客厅"], type: "局部改造", area: 67, budget: 11.8, days: 49, city: "杭州", liked: 88 },
-  { id: 20, title: "湘湖壹号 · 法式餐厨空间", image: "assets/case-light-luxury.jpg", style: "法式", layout: "四室两厅", spaces: ["餐厅", "厨房", "客厅", "玄关"], type: "毛坯整装", area: 145, budget: 44.6, days: 124, city: "杭州", liked: 176 },
+  { id: 16, title: "钱塘云湾 · 奶油厨餐厅", image: "assets/case-soft-luxury-living.jpg", style: "奶油风", layout: "两室两厅", spaces: ["厨房", "餐厅", "客厅"], type: "局部改造", area: 78, budget: 16.6, days: 62, city: "杭州", liked: 108 },
+  { id: 17, title: "城西银泰 · 原木成长房", image: "assets/case-colorful-modern-living.jpg", style: "现代原木", layout: "三室两厅", spaces: ["儿童房", "书房", "主卧", "阳台"], type: "旧房翻新", area: 110, budget: 27.4, days: 92, city: "杭州", liked: 158 },
+  { id: 18, title: "滨江奥体 · 轻奢卫浴套间", image: "assets/case-urban-light-luxury.jpg", style: "现代轻奢", layout: "四室两厅", spaces: ["主卧", "卫生间", "次卧"], type: "局部改造", area: 151, budget: 24.8, days: 70, city: "杭州", liked: 119 },
+  { id: 19, title: "九堡家园 · 简约阳台书房", image: "assets/case-modern-minimal-living.jpg", style: "现代简约", layout: "两室一厅", spaces: ["阳台", "书房", "客厅"], type: "局部改造", area: 67, budget: 11.8, days: 49, city: "杭州", liked: 88 },
+  { id: 20, title: "湘湖壹号 · 法式餐厨空间", image: "assets/case-warm-french-living.jpg", style: "法式", layout: "四室两厅", spaces: ["餐厅", "厨房", "客厅", "玄关"], type: "毛坯整装", area: 145, budget: 44.6, days: 124, city: "杭州", liked: 176 },
   { id: 21, title: "西湖里 · 新中式书房", image: "assets/case-warm-modern.jpg", style: "新中式", layout: "三室一厅", spaces: ["书房", "客厅", "主卧"], type: "旧房翻新", area: 101, budget: 26.3, days: 89, city: "杭州", liked: 151 },
-  { id: 22, title: "和家园 · 奶油主卧套间", image: "assets/case-warm-modern.jpg", style: "奶油风", layout: "两室一厅", spaces: ["主卧", "卫生间", "玄关"], type: "旧房翻新", area: 82, budget: 19.5, days: 73, city: "杭州", liked: 123 },
+  { id: 22, title: "和家园 · 奶油主卧套间", image: "assets/case-soft-luxury-living.jpg", style: "奶油风", layout: "两室一厅", spaces: ["主卧", "卫生间", "玄关"], type: "旧房翻新", area: 82, budget: 19.5, days: 73, city: "杭州", liked: 123 },
   { id: 23, title: "之江壹品 · 原木复式之家", image: "assets/hero-living-room.jpg", style: "现代原木", layout: "复式/别墅", spaces: ["客厅", "餐厅", "书房", "儿童房"], type: "毛坯整装", area: 168, budget: 52.7, days: 137, city: "杭州", liked: 217 },
-  { id: 24, title: "丁桥景园 · 简约厨卫更新", image: "assets/case-minimal.jpg", style: "现代简约", layout: "三室一厅", spaces: ["厨房", "卫生间", "阳台"], type: "局部改造", area: 88, budget: 15.9, days: 59, city: "杭州", liked: 103 }
+  { id: 24, title: "丁桥景园 · 简约厨卫更新", image: "assets/case-light-luxury.jpg", style: "现代简约", layout: "三室一厅", spaces: ["厨房", "卫生间", "阳台"], type: "局部改造", area: 88, budget: 15.9, days: 59, city: "杭州", liked: 103 }
 ];
+
+const caseImagesByStyle = {
+  "现代原木": ["assets/hero-living-room.jpg", "assets/case-minimal.jpg", "assets/case-colorful-modern-living.jpg"],
+  "奶油风": ["assets/case-minimal.jpg", "assets/case-soft-luxury-living.jpg", "assets/case-warm-french-living.jpg"],
+  "现代简约": ["assets/case-modern-minimal-living.jpg", "assets/case-light-luxury.jpg", "assets/case-colorful-modern-living.jpg"],
+  "现代轻奢": ["assets/case-soft-luxury-living.jpg", "assets/case-urban-light-luxury.jpg", "assets/case-light-luxury.jpg"],
+  "新中式": ["assets/case-warm-modern.jpg", "assets/hero-living-room.jpg"],
+  "法式": ["assets/case-warm-french-living.jpg", "assets/case-soft-luxury-living.jpg"],
+  "美式复古": ["assets/case-classic-european-living.jpg", "assets/case-warm-french-living.jpg"]
+};
+
+function caseImageForStyle(style, index = 0) {
+  const images = caseImagesByStyle[style] || caseImagesByStyle["现代简约"];
+  return images[index % images.length];
+}
 
 const providers = [
   { name: "林予安", role: "资深空间设计师", tag: "旧房翻新", signature: "让旧房保留记忆，也重新适合当下的生活。", spaces: ["客厅", "餐厅", "主卧", "书房"], layouts: ["三室两厅", "四室两厅", "复式/别墅"], styles: ["现代原木", "现代简约", "新中式"], caseIds: [1, 11, 15, 23], score: 4.9, years: 12, projects: 186, response: "3分钟", color: "#dff3e9" },
   { name: "周启明", role: "国家注册室内设计师", tag: "现代原木", signature: "先梳理动线与收纳，再谈空间的表情。", spaces: ["客厅", "餐厅", "厨房", "主卧"], layouts: ["两室一厅", "两室两厅", "三室两厅"], styles: ["现代原木", "奶油风", "现代简约"], caseIds: [2, 5, 10, 16], score: 4.8, years: 9, projects: 142, response: "5分钟", color: "#e8f1f7" },
-  { name: "观筑设计", role: "平台金牌装修公司", tag: "全屋整装", signature: "从设计、报价到落地，用同一套标准交付。", spaces: ["客厅", "餐厅", "厨房", "主卧", "次卧", "儿童房", "卫生间"], layouts: ["两室两厅", "三室两厅", "四室两厅", "复式/别墅"], styles: ["现代原木", "现代轻奢", "新中式", "法式"], caseIds: [3, 7, 12, 20, 23], score: 4.9, years: 15, projects: 326, response: "2分钟", color: "#fff0df" },
+  { name: "观筑设计", role: "平台金牌装修公司", tag: "全屋整装", signature: "从设计、报价到落地，用同一套标准交付。", spaces: ["客厅", "餐厅", "厨房", "主卧", "次卧", "儿童房", "卫生间"], layouts: ["两室两厅", "三室两厅", "四室两厅", "复式/别墅"], styles: ["现代原木", "现代轻奢", "新中式", "法式", "美式复古"], caseIds: [3, 7, 12, 20, 23], score: 4.9, years: 15, projects: 326, response: "2分钟", color: "#fff0df" },
   { name: "合度空间", role: "本地认证施工团队", tag: "施工工艺", signature: "好设计必须落到尺寸、材料和施工节点上。", spaces: ["厨房", "卫生间", "阳台", "玄关"], layouts: ["一室一厅", "两室一厅", "两室两厅", "三室一厅"], styles: ["现代简约", "奶油风"], caseIds: [4, 9, 13, 24], score: 4.7, years: 8, projects: 119, response: "8分钟", color: "#f2e9f4" },
   { name: "许清和", role: "环保材料顾问", tag: "环保选材", signature: "环保不是单一等级，而是一套空间用量与工艺控制。", spaces: ["厨房", "主卧", "儿童房", "书房"], layouts: ["两室一厅", "两室两厅", "三室两厅", "四室两厅"], styles: ["现代原木", "奶油风", "新中式"], caseIds: [11, 17, 21, 22], score: 4.9, years: 11, projects: 208, response: "4分钟", color: "#e9f3e0" },
   { name: "方寸法务", role: "装修合同咨询团队", tag: "合同避坑", signature: "把材料型号、增项边界与延期责任写进合同。", spaces: ["客厅", "厨房", "卫生间"], layouts: ["一室一厅", "两室一厅", "三室两厅", "复式/别墅"], styles: ["现代简约", "现代轻奢", "法式"], caseIds: [8, 14, 18, 20], score: 4.8, years: 7, projects: 154, response: "6分钟", color: "#f7e9e5" },
   { name: "苏棠", role: "色彩与软装设计师", tag: "奶油法式", signature: "用克制的色彩层次，让家柔和但不单调。", spaces: ["客厅", "餐厅", "主卧", "儿童房"], layouts: ["两室一厅", "两室两厅", "三室一厅", "三室两厅"], styles: ["奶油风", "法式", "现代原木"], caseIds: [2, 8, 10, 16, 22], score: 4.9, years: 8, projects: 128, response: "4分钟", color: "#f9e7df" },
   { name: "沈砚", role: "新中式空间设计师", tag: "东方美学", signature: "以现代生活为尺度，重写东方空间秩序。", spaces: ["客厅", "餐厅", "书房", "玄关", "主卧"], layouts: ["三室一厅", "四室两厅", "复式/别墅"], styles: ["新中式", "现代原木", "现代简约"], caseIds: [7, 15, 21, 23], score: 4.9, years: 13, projects: 167, response: "5分钟", color: "#e8eadf" },
   { name: "贺川", role: "小户型改造设计师", tag: "空间扩容", signature: "每一平方米，都应该承担清晰而灵活的功能。", spaces: ["客厅", "厨房", "阳台", "玄关", "卫生间"], layouts: ["一室一厅", "两室一厅", "两室两厅", "三室一厅"], styles: ["现代简约", "现代原木", "奶油风"], caseIds: [4, 9, 13, 19, 24], score: 4.8, years: 10, projects: 214, response: "3分钟", color: "#e4edf2" },
-  { name: "顾南乔", role: "大宅全案设计师", tag: "轻奢法式", signature: "用比例和材质建立高级感，而不是堆砌装饰。", spaces: ["客厅", "餐厅", "主卧", "次卧", "玄关"], layouts: ["三室两厅", "四室两厅", "复式/别墅"], styles: ["现代轻奢", "法式", "新中式"], caseIds: [3, 6, 12, 14, 18, 20], score: 4.9, years: 14, projects: 193, response: "6分钟", color: "#f1e7e4" },
+  { name: "顾南乔", role: "大宅全案设计师", tag: "轻奢法式", signature: "用比例和材质建立高级感，而不是堆砌装饰。", spaces: ["客厅", "餐厅", "主卧", "次卧", "玄关"], layouts: ["三室两厅", "四室两厅", "复式/别墅"], styles: ["现代轻奢", "法式", "新中式", "美式复古"], caseIds: [3, 6, 12, 14, 18, 20], score: 4.9, years: 14, projects: 193, response: "6分钟", color: "#f1e7e4" },
   { name: "叶知夏", role: "亲子成长空间设计师", tag: "儿童友好", signature: "为孩子保留成长弹性，也照顾全家人的秩序。", spaces: ["儿童房", "书房", "客厅", "主卧", "阳台"], layouts: ["两室一厅", "三室一厅", "三室两厅", "四室两厅"], styles: ["奶油风", "现代原木", "现代简约"], caseIds: [2, 5, 10, 17, 23], score: 4.9, years: 9, projects: 156, response: "3分钟", color: "#fff0cf" },
   { name: "陈屿", role: "厨卫专项设计师", tag: "厨卫改造", signature: "从使用频率出发，解决动线、收纳和清洁难题。", spaces: ["厨房", "卫生间", "餐厅", "阳台"], layouts: ["一室一厅", "两室一厅", "两室两厅", "三室一厅", "四室两厅"], styles: ["现代简约", "奶油风", "现代轻奢"], caseIds: [4, 9, 16, 18, 20, 24], score: 4.8, years: 11, projects: 239, response: "4分钟", color: "#dfeeed" },
   { name: "孟知微", role: "软装陈设设计师", tag: "氛围营造", signature: "从光线、织物和家具关系中建立家的情绪。", spaces: ["客厅", "餐厅", "主卧", "次卧"], layouts: ["两室一厅", "两室两厅", "三室一厅", "三室两厅"], styles: ["奶油风", "法式", "现代原木", "现代轻奢"], caseIds: [1, 2, 8, 10, 22], score: 4.8, years: 7, projects: 121, response: "5分钟", color: "#f4e4ee" },
-  { name: "陆远", role: "别墅与复式设计师", tag: "结构动线", signature: "先解决楼层关系，再让每个空间自然连接。", spaces: ["客厅", "餐厅", "书房", "主卧", "玄关"], layouts: ["四室两厅", "复式/别墅"], styles: ["现代原木", "现代轻奢", "新中式", "法式"], caseIds: [6, 12, 15, 20, 23], score: 4.9, years: 16, projects: 178, response: "7分钟", color: "#e6e8f2" }
+  { name: "陆远", role: "别墅与复式设计师", tag: "结构动线", signature: "先解决楼层关系，再让每个空间自然连接。", spaces: ["客厅", "餐厅", "书房", "主卧", "玄关"], layouts: ["四室两厅", "复式/别墅"], styles: ["现代原木", "现代轻奢", "新中式", "法式", "美式复古"], caseIds: [6, 12, 15, 20, 23], score: 4.9, years: 16, projects: 178, response: "7分钟", color: "#e6e8f2" }
 ];
 
 const discoveryFilters = {
   spaces: ["全部", "客厅", "餐厅", "厨房", "主卧", "次卧", "儿童房", "书房", "卫生间", "阳台", "玄关"],
   layouts: ["全部", "一室一厅", "两室一厅", "两室两厅", "三室一厅", "三室两厅", "四室两厅", "复式/别墅"],
-  styles: ["全部", "现代原木", "奶油风", "现代简约", "现代轻奢", "新中式", "法式"]
+  styles: ["全部", "现代原木", "奶油风", "现代简约", "现代轻奢", "新中式", "法式", "美式复古"]
 };
 
 const defaultProviderLeads = [
@@ -174,6 +189,46 @@ async function api(path, options = {}) {
   return response.status === 204 ? null : response.json();
 }
 
+async function runAiBudget() {
+  if (!state.session) { showToast("请先登录后使用 AI 预算分析"); return; }
+  state.aiBudgetLoading = true; render();
+  try {
+    const result = await api("/api/ai/budget", { method: "POST", body: JSON.stringify({
+      city: state.consult.city || "杭州",
+      area: Number(state.area || state.consult.area || 96),
+      houseType: state.consult.layout || "",
+      decorationType: state.consult.type || "",
+      style: state.consult.style || "",
+      budgetRange: state.consult.budget || "",
+      moveInTime: state.consult.moveIn || "",
+      needs: Array.isArray(state.consult.needs) ? state.consult.needs.join("、") : (state.consult.needs || "")
+    })});
+    state.aiBudget = result.analysis; state.aiBudgetLoading = false; render();
+  } catch (error) {
+    state.aiBudgetLoading = false; render();
+    showToast(error.message || "AI 预算分析失败，请稍后重试");
+  }
+}
+
+async function runAiRecommend() {
+  if (!state.session) return;
+  state.aiRecommendLoading = true; render();
+  const needParts = [
+    `${state.consult.area || 96}㎡${state.consult.layout || ""}`,
+    state.consult.type ? `装修类型：${state.consult.type}` : "",
+    state.consult.style ? `风格：${state.consult.style}` : "",
+    state.consult.spaces?.length ? `重点空间：${state.consult.spaces.join("、")}` : "",
+    Array.isArray(state.consult.needs) && state.consult.needs.length ? `核心诉求：${state.consult.needs.join("、")}` : ""
+  ].filter(Boolean).join("；");
+  const candidates = providers.map(p => ({ name: p.name, role: p.role, tag: p.tag, score: p.score, years: p.years, spaces: (p.spaces || []).join("、"), styles: (p.styles || []).join("、") }));
+  try {
+    const result = await api("/api/ai/recommend", { method: "POST", body: JSON.stringify({ need: needParts, providers: candidates }) });
+    state.aiRecommend = result.recommendations || []; state.aiRecommendLoading = false; render();
+  } catch (error) {
+    state.aiRecommendLoading = false; render();
+  }
+}
+
 const storedSession = loadSession();
 
 function routeHash(role, route) {
@@ -222,7 +277,13 @@ const state = {
   risks: loadData("zhujian-admin-risks", defaultRisks),
   contents: loadData("zhujian-admin-contents", defaultContents),
   backendLoaded: false,
-  dashboard: null
+  dashboard: null,
+  aiBudget: null,
+  aiBudgetLoading: false,
+  aiRecommend: null,
+  aiRecommendLoading: false,
+  aiPanelW: null,
+  aiPanelH: null
 };
 
 function loadAiPosition() {
@@ -343,18 +404,71 @@ function positionedAiTemplate() {
     </button>`;
 }
 
+async function sendAiMessage(question) {
+  if (!question) return;
+  state.aiMessages.push(question);
+  state.aiMessages.push("正在思考…");
+  render();
+  try {
+    const result = await api("/api/ai/chat", { method: "POST", body: JSON.stringify({ message: question }) });
+    state.aiMessages[state.aiMessages.length - 1] = result.reply || "抱歉，AI 顾问暂时没有给出回复。";
+  } catch (error) {
+    state.aiMessages[state.aiMessages.length - 1] = "抱歉，" + (error.message || "AI 服务暂时不可用，请稍后重试");
+  }
+  render();
+}
+
 function aiTemplate() {
   const open = state.aiOpen;
+  const quick = ["90平预算怎么分配", "现代简约风格怎么选", "水电验收看什么", "环保板材怎么选"];
   return `
-    ${open ? `<section class="ai-panel" aria-label="AI智能顾问">
-      <div class="ai-head"><strong>AI 装修顾问 · 在线</strong><button data-action="toggle-ai" aria-label="关闭 AI 智能顾问">×</button></div>
+    ${open ? `<section class="ai-panel" aria-label="AI智能顾问"${state.aiPanelW ? ` style="width:${state.aiPanelW}px;height:${state.aiPanelH}px;left:${Math.round((window.innerWidth - state.aiPanelW) / 2)}px;top:${Math.round((window.innerHeight - state.aiPanelH) / 2)}px;transform:none"` : ""}>
+      <div class="ai-head">
+        <div class="ai-head-user">
+          <span class="ai-avatar">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 10.5 12 3.5l8 7v8.5a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19z" fill="#fff"/></svg>
+          </span>
+          <span class="ai-head-text"><strong>筑见 AI 顾问</strong><small><i class="ai-online-dot"></i>装修助手 · 在线</small></span>
+        </div>
+        <button data-action="toggle-ai" aria-label="关闭 AI 智能顾问">×</button>
+      </div>
       <div class="ai-messages">${state.aiMessages.map((msg, index) => `<div class="message ${index % 2 ? "user" : ""}">${msg}</div>`).join("")}</div>
-      <form class="ai-input" data-form="ai"><input name="message" placeholder="输入装修问题" autocomplete="off"><button class="btn btn-primary btn-small">发送</button></form>
+      <div class="ai-quick"><span class="ai-quick-label">试试问：</span><div class="ai-quick-list">${quick.map(q => `<button class="ai-quick-chip" data-action="ai-quick" data-q="${q}">${q}</button>`).join("")}</div></div>
+      <form class="ai-input" data-form="ai"><input name="message" placeholder="输入装修问题，如：水电怎么验收" autocomplete="off"><button class="btn btn-primary btn-small" type="submit">发送</button></form>
+      <div class="ai-foot">AI 回答仅供参考，不构成正式造价或法律意见</div>
+      <span class="ai-resize" data-action="ai-resize" title="拖动调整大小"></span>
     </section>` : ""}
     <button class="ai-button ${open ? "is-open" : ""}" data-action="toggle-ai" aria-label="${open ? "关闭" : "打开"} AI 智能顾问" aria-pressed="${open}" title="拖动 AI 顾问，点击打开对话" ${aiButtonStyle()}>
-      <span class="ai-button-shell" aria-hidden="true"><span class="ai-spark ai-spark-large"></span><span class="ai-spark ai-spark-small"></span><span class="ai-monogram">AI</span><span class="ai-status-dot"></span></span>
+      <span class="ai-button-shell" aria-hidden="true">
+        <svg class="ai-house-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 3.5l8 7v8.5a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19z" fill="#fff"/></svg>
+        <span class="ai-monogram">AI</span>
+        <span class="ai-status-dot"></span>
+      </span>
     </button>`;
 }
+
+let aiResizing = null;
+document.addEventListener("mousedown", (event) => {
+  if (!event.target.closest("[data-action='ai-resize']")) return;
+  event.preventDefault();
+  const panel = event.target.closest(".ai-panel");
+  if (!panel) return;
+  const rect = panel.getBoundingClientRect();
+  aiResizing = { panel, startX: event.clientX, startY: event.clientY, startW: rect.width, startH: rect.height, cx: rect.left + rect.width / 2, cy: rect.top + rect.height / 2 };
+});
+document.addEventListener("mousemove", (event) => {
+  if (!aiResizing) return;
+  const { panel, startX, startY, startW, startH, cx, cy } = aiResizing;
+  const w = Math.min(Math.max(startW + (event.clientX - startX), 320), Math.min(560, window.innerWidth - 40));
+  const h = Math.min(Math.max(startH + (event.clientY - startY), 360), window.innerHeight * 0.9);
+  state.aiPanelW = Math.round(w); state.aiPanelH = Math.round(h);
+  panel.style.width = state.aiPanelW + "px";
+  panel.style.height = state.aiPanelH + "px";
+  panel.style.left = Math.round(cx - state.aiPanelW / 2) + "px";
+  panel.style.top = Math.round(cy - state.aiPanelH / 2) + "px";
+  panel.style.transform = "none";
+});
+document.addEventListener("mouseup", () => { aiResizing = null; });
 
 function authTemplate() {
   const isRegister = state.route === "register";
@@ -510,6 +624,22 @@ function consultTemplate() {
   </main>`;
 }
 
+function aiRecommendBlock() {
+  if (state.aiRecommendLoading) {
+    return `<div class="panel-body recommend-list"><div class="recommend"><p style="color:var(--muted)">AI 正在基于你的需求匹配最合适的服务商…</p></div></div>`;
+  }
+  if (state.aiRecommend && state.aiRecommend.length) {
+    const items = state.aiRecommend.map(item => {
+      const p = providers.find(x => x.name === item.name);
+      const role = p ? ` · ${p.role}` : "";
+      const avatar = p ? `<div class="avatar-square" style="background:${p.color}">${initials(p.name)}</div>` : `<div class="avatar-square" style="background:#dfe9f2">${initials(item.name)}</div>`;
+      return `<div class="recommend">${avatar}<div><h4>${item.name}${role}</h4><p>AI 匹配度 ${item.score} 分 · ${item.reason || "匹配度较高"}</p></div><button class="btn btn-secondary btn-small" data-action="appointment" data-provider="${item.name}">预约</button></div>`;
+    }).join("");
+    return `<div class="panel-body recommend-list">${items}<p style="color:var(--muted);font-size:12px;margin-top:10px">由真实大模型基于你的需求匹配</p></div>`;
+  }
+  return `<div class="panel-body recommend-list">${providers.slice(0,3).map(provider => `<div class="recommend"><div class="avatar-square" style="background:${provider.color}">${initials(provider.name)}</div><div><h4>${provider.name} · ${provider.role}</h4><p>擅长 ${provider.tag} · ${provider.years} 年经验 · 评分 ${provider.score}</p></div><button class="btn btn-secondary btn-small" data-action="appointment" data-provider="${provider.name}">预约</button></div>`).join("")}</div>`;
+}
+
 function consultResultTemplate() {
   const area = Number(state.consult.area || 96);
   const low = (area * 0.19).toFixed(1);
@@ -518,9 +648,28 @@ function consultResultTemplate() {
     <div class="container content-grid"><section>
       <div class="result-hero"><span class="label">方案编号 ZJ-${new Date().getFullYear()}-0805</span><h2>${area}㎡ ${state.consult.style || "现代原木"}焕新方案</h2><p>建议采用“功能优先、重点投入”的预算策略，预留 8% 机动金控制增项。</p></div>
       <div class="metric-row"><div class="metric"><span>合理预算范围</span><strong>${low}-${high} 万</strong></div><div class="metric"><span>参考施工周期</span><strong>${Math.round(area * .82)}-${Math.round(area * .96)} 天</strong></div><div class="metric"><span>匹配服务商</span><strong>12 家</strong></div></div>
-      <div class="panel" style="margin-top:18px"><div class="panel-header"><h3>高匹配顾问</h3><button class="text-link" data-action="navigate" data-route="advisors">查看全部</button></div><div class="panel-body recommend-list">${providers.slice(0,3).map(provider => `<div class="recommend"><div class="avatar-square" style="background:${provider.color}">${initials(provider.name)}</div><div><h4>${provider.name} · ${provider.role}</h4><p>擅长 ${provider.tag} · ${provider.years} 年经验 · 评分 ${provider.score}</p></div><button class="btn btn-secondary btn-small" data-action="appointment" data-provider="${provider.name}">预约</button></div>`).join("")}</div></div>
+      <div class="panel" style="margin-top:18px"><div class="panel-header"><h3>高匹配顾问</h3><button class="text-link" data-action="navigate" data-route="advisors">查看全部</button></div>${aiRecommendBlock()}</div>
     </section><aside class="aside-stack"><div class="aside-note"><h3>预算风险提示</h3><p>当前面积建议重点关注定制柜体、水电点位与墙体拆改。正式报价时平台会自动校验单价异常与漏项。</p></div><button class="btn btn-primary" data-action="navigate" data-route="budget">查看完整预算拆分</button><button class="btn btn-secondary" data-action="restart-consult">重新填写需求</button></aside></div>
   </main>`;
+}
+
+function budgetAiPanel() {
+  if (!state.session) return "";
+  if (state.aiBudgetLoading) {
+    return `<section class="panel" style="margin-top:20px"><div class="panel-header"><h2>AI 预算分析</h2><span class="status info">分析中…</span></div><div class="panel-body"><p style="color:var(--muted)">正在结合面积、档次与需求生成专属预算建议…</p></div></section>`;
+  }
+  if (state.aiBudget) {
+    const d = state.aiBudget;
+    const breakdown = (d.breakdown || []).map(b => `<div class="bar-row"><span>${b.item || ""}</span><div class="bar"><span style="width:${Math.min(100, Number(b.percent) || 0)}%"></span></div><strong>${b.amount || ""}</strong></div>`).join("");
+    return `<section class="panel" style="margin-top:20px"><div class="panel-header"><h2>AI 预算分析</h2><span class="status info">真实模型生成</span></div><div class="panel-body">
+      <div class="metric-row"><div class="metric"><span>AI 建议预算范围</span><strong>${d.budgetRange || "-"}</strong></div><div class="metric"><span>参考施工周期</span><strong>${d.cycle || "-"}</strong></div></div>
+      ${breakdown ? `<div class="breakdown" style="margin-top:16px">${breakdown}</div>` : ""}
+      ${(d.suggestions || []).length ? `<div class="aside-note" style="margin-top:14px"><h3>AI 建议</h3><ul style="margin:8px 0 0 18px">${d.suggestions.map(s => `<li>${s}</li>`).join("")}</ul></div>` : ""}
+      ${(d.riskTips || []).length ? `<div class="aside-note" style="margin-top:10px"><h3>风险提示</h3><ul style="margin:8px 0 0 18px">${d.riskTips.map(s => `<li>${s}</li>`).join("")}</ul></div>` : ""}
+      <p style="color:var(--muted);font-size:12px;margin-top:12px">由真实大模型基于你的需求生成，仅供参考，不构成正式造价结论。</p>
+    </div></section>`;
+  }
+  return `<section class="panel" style="margin-top:20px"><div class="panel-header"><h2>AI 预算分析</h2><span class="status info">真实模型</span></div><div class="panel-body"><p>让 AI 结合你的面积、装修类型与核心诉求，生成更个性化的预算构成与风险提示。</p><button class="btn btn-primary" data-action="ai-budget">生成 AI 专属预算分析</button></div></section>`;
 }
 
 function budgetTemplate() {
@@ -540,6 +689,7 @@ function budgetTemplate() {
         ${parts.map(([label, percent]) => `<div class="bar-row"><span>${label}</span><div class="bar"><span style="width:${percent * 100}%"></span></div><strong>${money(total * percent)} 万</strong></div>`).join("")}
         <div class="aside-note" style="margin-top:10px"><h3>智能建议</h3><p>建议另预留 ${money(total * .08)} 万机动金。定制柜体占比略高时，可先锁定板材环保等级与五金型号再询价。</p></div>
       </div></div></div>
+      ${budgetAiPanel()}
 
       <div class="section-head" style="margin-top:46px"><div><span class="eyebrow">三方比价</span><h2>同一模板，逐项对比</h2><p>异常单价、缺失项目和潜在增项由系统自动标记。</p></div><button class="btn btn-secondary" data-action="download">导出预算表</button></div>
       <div class="panel table-wrap"><table><thead><tr><th>服务商</th><th>总报价</th><th>完整度</th><th>风险检测</th><th>响应时间</th><th>操作</th></tr></thead><tbody>
@@ -715,7 +865,7 @@ function providerOverview() {
 }
 
 function chartTemplate(values, labels) {
-  return `<div class="chart">${values.map((value, i) => `<div class="chart-group"><div class="chart-bar" style="height:${value}%"></div><span>${labels[i]}</span></div>`).join("")}</div>`;
+  return `<div class="chart">${values.map((value, i) => `<div class="chart-group"><div class="chart-bar" style="height:${value}%; animation-delay:${(i * 0.09).toFixed(2)}s"><span class="chart-val">${value}</span></div><span>${labels[i]}</span></div>`).join("")}</div>`;
 }
 
 function activityTemplate(items) {
@@ -735,7 +885,7 @@ function projectTable() {
 }
 
 function portfolioManager() {
-  const published = [...state.portfolio.map((item, index) => ({ id: 100 + index, image: "assets/case-warm-modern.jpg", style: item.style, type: "服务商发布", city: "杭州", title: item.title, area: item.area, days: item.days, budget: item.budget })), ...cases.slice(0,3)];
+  const published = [...state.portfolio.map((item, index) => ({ id: 100 + index, image: caseImageForStyle(item.style, index), style: item.style, type: "服务商发布", city: "杭州", title: item.title, area: item.area, days: item.days, budget: item.budget })), ...cases.slice(0,3)];
   return `<div class="section-head"><div><h2 style="font-size:20px">已发布案例</h2><p>所有案例需绑定项目订单与验收记录。</p></div><button class="btn btn-secondary" data-action="upload-case">上传新案例</button></div><div class="case-grid">${published.map(caseCard).join("")}</div>`;
 }
 
@@ -1060,6 +1210,8 @@ document.addEventListener("click", event => {
     state.aiOpen = !state.aiOpen;
     render();
   }
+  if (action === "ai-budget") { runAiBudget(); }
+  if (action === "ai-quick") { sendAiMessage(target.dataset.q); }
   if (action === "select-consult") {
     const key = target.dataset.key, value = target.dataset.value;
     if (target.dataset.multi === "1") {
@@ -1073,7 +1225,7 @@ document.addEventListener("click", event => {
     const step = consultSteps[state.consultStep];
     if (!step.fields && (!state.consult[step.key] || state.consult[step.key].length === 0)) { showToast("请先完成本步选择"); return; }
     if (state.consultStep < consultSteps.length - 1) { state.consultStep++; render(); } else {
-      localStorage.setItem("zhujian-consult", JSON.stringify(state.consult)); state.consultComplete = true; render(); showToast("专属方案已生成并保存"); syncConsultRequest();
+      localStorage.setItem("zhujian-consult", JSON.stringify(state.consult)); state.consultComplete = true; render(); showToast("专属方案已生成并保存"); syncConsultRequest(); runAiRecommend();
     }
   }
   if (action === "restart-consult") { state.consultStep = 0; state.consultComplete = false; render(); }
@@ -1122,7 +1274,7 @@ document.addEventListener("click", event => {
   if (action === "quote-from-lead") openQuoteEditor({ leadId: target.dataset.id });
   if (action === "edit-quote") openQuoteEditor({ quoteId: target.dataset.id });
   if (action === "update-project") openProjectUpdate(target.dataset.id);
-  if (action === "upload-case") openInfoModal("发布完工案例", `<form data-form="upload-case" class="form-grid"><div class="field"><label>关联项目</label><select name="project">${state.projects.map(item => `<option>${item.name}</option>`).join("")}</select></div><div class="field"><label>案例标题</label><input name="title" required placeholder="小区 · 空间风格"></div><div class="field"><label>建筑面积（㎡）</label><input name="area" type="number" min="20" required></div><div class="field"><label>实际造价（万元）</label><input name="budget" type="number" min="1" step="0.1" required></div><div class="field"><label>施工周期（天）</label><input name="days" type="number" min="1" required></div><div class="field"><label>空间风格</label><select name="style"><option>现代原木</option><option>奶油风</option><option>现代简约</option><option>现代轻奢</option></select></div><div class="aside-note" style="grid-column:1/-1"><h3>发布校验</h3><p>案例将绑定项目订单、报价与竣工验收记录，提交后进入管理端内容审核。</p></div><button class="btn btn-primary" style="grid-column:1/-1">提交案例审核</button></form>`);
+  if (action === "upload-case") openInfoModal("发布完工案例", `<form data-form="upload-case" class="form-grid"><div class="field"><label>关联项目</label><select name="project">${state.projects.map(item => `<option>${item.name}</option>`).join("")}</select></div><div class="field"><label>案例标题</label><input name="title" required placeholder="小区 · 空间风格"></div><div class="field"><label>建筑面积（㎡）</label><input name="area" type="number" min="20" required></div><div class="field"><label>实际造价（万元）</label><input name="budget" type="number" min="1" step="0.1" required></div><div class="field"><label>施工周期（天）</label><input name="days" type="number" min="1" required></div><div class="field"><label>空间风格</label><select name="style"><option>现代原木</option><option>奶油风</option><option>现代简约</option><option>现代轻奢</option><option>新中式</option><option>法式</option><option>美式复古</option></select></div><div class="aside-note" style="grid-column:1/-1"><h3>发布校验</h3><p>案例将绑定项目订单、报价与竣工验收记录，提交后进入管理端内容审核。</p></div><button class="btn btn-primary" style="grid-column:1/-1">提交案例审核</button></form>`);
   if (action === "manage-order") openOrderManager(target.dataset.id);
   if (action === "review-provider") openProviderReview(target.dataset.id);
   if (action === "review-risk") openRiskReview(target.dataset.id);
@@ -1246,9 +1398,8 @@ document.addEventListener("submit", async event => {
   }
   if (form.dataset.form === "ai") {
     const input = form.elements.message; const question = input.value.trim(); if (!question) return;
-    state.aiMessages.push(question);
-    const answer = question.includes("预算") ? "建议先按面积与装修档次得到基准预算，再单列定制、设备和 8% 机动金。你可以到“透明报价”页面动态测算。" : question.includes("验收") ? "验收应按水电、泥木、油漆、安装和竣工五个节点留存照片与签字记录，知识工具页有对应清单。" : "我已记录这个问题。通常应先确认现场条件、合同约定和材料型号，再给出结论；你也可以预约对应领域的专业顾问进一步核实。";
-    state.aiMessages.push(answer); render();
+    input.value = "";
+    sendAiMessage(question);
   }
 });
 
