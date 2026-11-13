@@ -1,0 +1,4 @@
+# 统一换行符，避免在 Windows 上编辑后 Linux 无法执行
+*.sh   text eol=lf
+*.service text eol=lf
+*.md   text eol=lf
